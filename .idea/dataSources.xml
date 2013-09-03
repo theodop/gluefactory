@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2281346641">
+    <data-source source="LOCAL" name="Rails GlueFactory: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1f964fae-f364-46a2-838b-22bde58aa3d3">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gluefactory_prod</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dff2dfcbdfc4dfcbdfdedfc5dfd9dffadfeddf9b</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails GlueFactory: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="8699076d-dac0-45af-8239-00e420bab717">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gluefactory_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dff2dfcbdfc4dfcbdfdedfc5dfd9dffadfeddf9b</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails GlueFactory: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="1f11a6f5-1685-48fd-8b3a-eb4fcb71c751">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/gluefactory_dev</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dff2dfcbdfc4dfcbdfdedfc5dfd9dffadfeddf9b</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title><%= h(yield(:title) || 'Devise') %></title>
+  <%= csrf_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag :application %>
+  <%= yield(:head) %>
+</head>
+<body>
+<div id="header">
+
+  <div id="main-menu-login">
+    <% if user_signed_in? -%>
+        <%= current_user.email %> |
+        <%= link_to 'My info', edit_user_registration_path %> |
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+    <% else -%>
+        New here? <%= link_to 'Sign up!', new_user_registration_path %> Or <%= link_to 'log in', new_user_session_path %>
+    <% end -%>
+  </div>
+
+  <div id="main-menu">
+    <span id="logo-text"><%= link_to 'GlueFactory', root_path %></span>
+    <ul>
+      <li><%= link_to 'Tasks', tasks_path %></li>
+      <li><%= link_to 'Infoblobs', root_path %></li>
+    </ul>
+  </div>
+</div>
+
+<% if flash[:notice] -%>
+<div id="flash-container">
+  <%- flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, id: "flash_#{name}" if msg.is_a?(String) %>
+  <%- end -%>
+</div>
+<% end -%>
+
+<div id="body-container">
+  <div id="body-left-column">
+    <%= yield %>
+  </div>
+  <div id="body-right-column">
+    <h2>Side column!</h2>
+  </div>
+</div>
+
+</body>
+</html>
